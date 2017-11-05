@@ -133,25 +133,24 @@
             </div>
         </div>
     </div>
-    
-    <script src="/public/assets/jquery/jquery.min.js"></script>
+    <script src="/public/js/require.js"></script>
+    <script src="/public/js/config.js"></script>
+    <!--<script src="/public/assets/jquery/jquery.min.js"></script>
     <script src="/public/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="/public/assets/nprogress/nprogress.js"></script>
     <script src="/public/assets/echarts/echarts.min.js"></script>
-    <script src="/public/js/common.js"></script>
+    <script src="/public/js/common.js"></script>-->
     <script>
-		   $.ajax({
-            // http://localhost:3000/employee/employeeLogin
-            url: '/api/employee/employeeLogin',
-            type: 'post',
-            success: function (info) {
-                console.log(info);
-            }
-        })
+    	
+    	
+    	
+    	
+		require['src/index']   
+		
+		
 
 
-
-        // 基于准备好的dom，初始化echarts实例
+       /* // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('main'));
 
         // 指定图表的配置项和数据
@@ -175,7 +174,7 @@
         };
 
         // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
+        myChart.setOption(option);*/
 
     </script>
 </body>
