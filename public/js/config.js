@@ -1,6 +1,6 @@
 require.config({
-	baseUrl: 'public',
+	baseUrl: '/public',
 	paths: {
-		jquery: 'asstes/jquery/jquery.min'
+		jquery: 'assets/jquery/jquery.min'
 	}
 })
