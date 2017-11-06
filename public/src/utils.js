@@ -3,8 +3,8 @@ define(['jquery'],function($){
 	// 检测登录
 	$.ajax({
             // http://localhost:3000/employee/employeeLogin
-            url: '/api/employee/employeeLogin',
-            type: 'post',
+            url: '/api/employee/checkRootLogin',
+            type: 'get',
             success: function (info) {
                if(info.error){
                	location.href = '/login.html';
